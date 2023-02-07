@@ -1,0 +1,58 @@
+https://wordhtml.com/
+
+Mi Primera Página Web
+
+
+¿Qué son las palicaciones web?
+
+Es un sitio web que, tras ser tratado por un programador, se ha podido adaptar para que los usuarios puedan acceder a través de un servidor web utilizando Internet mediante un navegador, ya sea Chrome, Mozilla, Microsoft Edge, etc.
+
+En la ingeniería de software se denomina aplicación web (al igual se le denomina como "Software Web") a aquella herramienta que los usuarios pueden utilizar accediendo a un servidor web a través de internet o de una intranet mediante un navegador. En otras palabras, es un programa que se codifica en un lenguaje interpretable por los navegadores web en la que se confía la ejecución al navegador.
+
+¿Cuántos tipos de apps web existen?
+Las apps web se dividen en cinco* grandes grupos. De tener que usar esta opción, es conveniente que elijas la que mejor se amolde a tus necesidades.
+
+Estática
+Se desarrollan en HTML5, CSS3 y JavaScript. No suelen cambiar su contenido. Es posible añadirles algo de movimiento con el uso de GIF o vídeos. 
+
+Dinámica
+Son la evolución lógica del tipo anterior. Cada vez que se abre la aplicación carga toda la información a ofrecer desde una base de datos. Estos datos se actualizan cada vez que se abre la aplicación. Es habitual el uso de lenguajes como PHP o ASP. Los cambios se llevan a cabo usando un panel CMS. Son muy eficaces para actualizar foros o bases de datos. Pueden personalizarse a tu gusto
+
+Inicia el desarrollo de la app web
+Este paso de cómo crear una aplicación web desde cero implica dividir el proceso en tres partes esenciales:
+
+Base de datos
+Aquí debes seleccionar la información que necesitas almacenar para construir una base de datos sólida.
+
+Fronted
+El fronted de tu app web construye la inerfaz, estructura o parte visual de tu página web. 
+
+Backend
+Es una de las partes más indispensables del proceso de desarrollo de aplicaciones web, ya que determina cómo funcionará la app. Por lo tanto, los lenguajes de programación destinados a construir los componentes de backend son necesarios para desarrollar componentes interactivos. PHP es uno de los lenguajes que puedes utilizar para crear las operaciones de backend de una aplicación web
+
+Como ya mencionamos, el Frontend, utilizando las herramientas HTML, CSS y Javascript, se encarga de construir la interfaz, veamos de que se tratan éstas herramientas:
+
+HTML: Lenguaje de etiquetas de hipertexto
+HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).
+
+"Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un participante activo en la «World Wide Web» (Red Informática Mundial).
+
+HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web. Las marcas HTML incluyen "elementos" especiales como < head>, < title>, < body>, < header>, < footer>, < article>, < section>, < p>, < div>, < span>, < img>, < aside>, < audio>, < canvas>, < datalist>, < details>, < embed>, < nav>, < output> (en-US), < progress>, < video>, < ul>, < ol>, < li> y muchos otros.
+
+CSS
+Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML. CSS describe como debe ser mostrarse el elemento estructurado en la pantalla
+
+JavaScript
+JavaScript (JS) es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase. Si bien es más conocido como un lenguaje de scripting (secuencias de comandos) para páginas web
+
+¿Qué es una aplicación multiplataforma?
+Para los que acabáis de llegar al mundo de las apps, la diferencia entre las apps nativas y multiplataforma es la siguiente.
+
+Las aplicaciones nativas están escritas en el lenguaje propio de cada sistema operativo. Esto significa que cada sistema (Android, iOS…) requerirá un desarrollo diferente.
+Las aplicaciones multiplataforma tienen un solo código que es interpretado y ajustado a los sistemas operativos. Diríamos que son prácticamente sinónimo de las aplicaciones web de las que hemos hablado en varias ocasiones.
+
+El desarrollo de aplicaciones multiplataforma se puede realizar de dos maneras distintas:
+
+Utilizando lenguaje propio del desarrollo web, como es el HTML5, CSS y JavaScript. Este código se presenta después dentro de un contenedor nativo, el WebView. Las aplicaciones creadas de esta manera se conocen también como aplicaciones híbridas.
+Utilizando herramientas de rendering a nativo. Estas sirven como puente entre el código multiplataforma y los componentes nativos. Este tipo de desarrollo se realiza con frameworks como Xamarin, React Native o Flutter.
+Uno de los lenguajes que precisamente nos permite el desarrollo multiplataforma HTML5. Veamos un poco más en profundidad en qué consiste.

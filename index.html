@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <style>
+    body{
+        background-color: #DCDCDC;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .titulo{
+        align-items: center;
+        display:flex;
+        justify-content: center;
+    }
+
+    nav a{
+        text-decoration:none;
+        color:inherit;
+        font-size:14px;
+    } 
+    nav li{
+        display:inline-block;
+        width:10%;
+        padding:5px 10px;
+        background-color:#771D40;
+        border:1px solid #771D40;
+        text-align:center;
+        color:#fff;
+    }
+    nav li:hover{
+        background-color:#fff;
+        color:#771D40;
+    }
+    .contenido{
+        height: auto;
+        margin: 50px 100px 100px 100px;
+        background-color: #FFF;
+        /*display:flex;
+        justify-content: center;
+        flex-direction: column;*/
+        border-radius: 40px;
+        box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.25);
+    }
+    .topicos{
+        margin: 50px;
+        align-content:center;
+    }
+    .titulo-paginas{
+        align-content: center;
+    }
+    .tipos{
+        background-image: url("fondo4.png");
+        margin: 50px;
+    }
+    .proceso{
+        background-image: url("fondo3.png");
+        margin: 50px;
+    }
+    .sombra{
+        text-shadow: 1px 1px 2px black, 0 0 1em #771D40, 0 0 0.2em #771D40;
+        color: white;
+        margin: 50px;
+    }
+    .azul{
+        color: #771D40;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="contenido">
+        
+        <div class="titulo">
+            <h1 class="sombra">Mi primera pagina web</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#proceso">Proceso</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JS</a></li>
+                <li><a href="#">Multiplataforma</a></li>
+                <li><a href="#">Herramienta</a></li>
+              </ul>
+              <hr>
+        </nav>
+        
+        <div class="topicos">
+            <h1 class="titulo-paginas azul">¿Qué son las palicaciones web?</h1>
+            <img src="app.png" width="50%">
+            <p>Es un sitio web que, tras ser tratado por un programador, se ha podido adaptar para que los usuarios puedan acceder a través de un servidor web utilizando Internet mediante un navegador, ya sea Chrome, Mozilla, Microsoft Edge, etc.</p>
+            <p>En la ingeniería de software se denomina aplicación web (al igual se le denomina como "Software Web") a aquella herramienta que los usuarios pueden utilizar accediendo a un servidor web a través de internet o de una intranet mediante un navegador. En otras palabras, es un programa que se codifica en un lenguaje interpretable por los navegadores web en la que se confía la ejecución al navegador.</p>
+            <hr>
+        </div>
+        
+        <div class="tipos">
+            <a name="tipos"></a>
+            <h1 class="titulo-paginas azul">¿Cuántos tipos de apps web existen?</h1>
+            <p>Las apps web se dividen en cinco* grandes grupos. De tener que usar esta opción, es conveniente que elijas la que mejor se amolde a tus necesidades.</p>
+            <h5 class="azul">Estática</h5>
+            <p>Se desarrollan en HTML5, CSS3 y JavaScript. No suelen cambiar su contenido. Es posible añadirles algo de movimiento con el uso de GIF o vídeos.</p>
+            <h5 class="azul">Dinámica</h5>
+            <p>Son la evolución lógica del tipo anterior. Cada vez que se abre la aplicación carga toda la información a ofrecer desde una base de datos. Estos datos se actualizan cada vez que se abre la aplicación. Es habitual el uso de lenguajes como PHP o ASP. Los cambios se llevan a cabo usando un panel CMS. Son muy eficaces para actualizar foros o bases de datos. Pueden personalizarse a tu gusto</p>
+            <hr>
+        </div>
+        <div class="proceso">
+            <a name="proceso"></a>
+            <h1 class="titulo-paginas azul">Inicia el desarrollo de la app web</h1>
+            <p>Este paso de cómo crear una aplicación web desde cero implica dividir el proceso en tres partes esenciales:</p>
+            <h5 class="azul">Base de datos</h5>
+            <p>Aquí debes seleccionar la información que necesitas almacenar para construir una base de datos sólida. 
+            <h5 class="azul">Fronted</h5>
+            <p>El fronted de tu app web construye la inerfaz, estructura o parte visual de tu página web.</p>
+            <h5 class="azul">Backend</h5>
+            <p>Es una de las partes más indispensables del proceso de desarrollo de aplicaciones web, ya que determina cómo funcionará la app. Por lo tanto, los lenguajes de programación destinados a construir los componentes de backend son necesarios para desarrollar componentes interactivos. PHP es uno de los lenguajes que puedes utilizar para crear las operaciones de backend de una aplicación web</p>
+            <br>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
