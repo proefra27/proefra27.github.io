@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera página web</title>
+    
     <style>
+    html{
+        scroll-behavior: smooth;
+    }
+
     body{
         background-color: #DCDCDC;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: Geneva, Verdana, sans-serif;
     }
 
     .titulo{
@@ -39,9 +44,6 @@
         height: auto;
         margin: 50px 100px 100px 100px;
         background-color: #FFF;
-        /*display:flex;
-        justify-content: center;
-        flex-direction: column;*/
         border-radius: 40px;
         box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.25);
     }
@@ -60,6 +62,14 @@
         background-image: url("fondo3.png");
         margin: 50px;
     }
+    .herramientas{
+        background-image: url("fondo2.png");
+        margin: 50px;
+    }
+    .html{
+        background-image: url("fondo5.png");
+        margin: 50px;
+    }
     .sombra{
         text-shadow: 1px 1px 2px black, 0 0 1em #771D40, 0 0 0.2em #771D40;
         color: white;
@@ -69,11 +79,25 @@
         color: #771D40;
         font-weight: bold;
     }
+    .tletra{
+        font-size: large;
+    }
+    .ir-arriba {
+        display:none;
+        padding:20px;
+        background:#771D40;
+        font-size:20px;
+        color:#fff;
+        cursor:pointer;
+        position: fixed;
+        bottom:20px;
+        right:20px;
+    }
     </style>
 </head>
 <body>
     <div class="contenido">
-        
+        <span class="ir-arriba">Up</span>
         <div class="titulo">
             <h1 class="sombra">Mi primera pagina web</h1>
         </div>
@@ -82,17 +106,17 @@
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#tipos">Tipos</a></li>
                 <li><a href="#proceso">Proceso</a></li>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JS</a></li>
-                <li><a href="#">Multiplataforma</a></li>
-                <li><a href="#">Herramienta</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JS</a></li>
+                <li><a href="#multi">Multiplataforma</a></li>
+                <li><a href="#herramientas">Herramienta</a></li>
               </ul>
               <hr>
         </nav>
         
         <div class="topicos">
-            <h1 class="titulo-paginas azul">¿Qué son las palicaciones web?</h1>
+            <h1 class="titulo-paginas azul">¿Qué son las aplicaciones web?</h1>
             <img src="app.png" width="50%">
             <p>Es un sitio web que, tras ser tratado por un programador, se ha podido adaptar para que los usuarios puedan acceder a través de un servidor web utilizando Internet mediante un navegador, ya sea Chrome, Mozilla, Microsoft Edge, etc.</p>
             <p>En la ingeniería de software se denomina aplicación web (al igual se le denomina como "Software Web") a aquella herramienta que los usuarios pueden utilizar accediendo a un servidor web a través de internet o de una intranet mediante un navegador. En otras palabras, es un programa que se codifica en un lenguaje interpretable por los navegadores web en la que se confía la ejecución al navegador.</p>
@@ -103,9 +127,9 @@
             <a name="tipos"></a>
             <h1 class="titulo-paginas azul">¿Cuántos tipos de apps web existen?</h1>
             <p>Las apps web se dividen en cinco* grandes grupos. De tener que usar esta opción, es conveniente que elijas la que mejor se amolde a tus necesidades.</p>
-            <h5 class="azul">Estática</h5>
+            <h5 class="azul tletra">Estática</h5>
             <p>Se desarrollan en HTML5, CSS3 y JavaScript. No suelen cambiar su contenido. Es posible añadirles algo de movimiento con el uso de GIF o vídeos.</p>
-            <h5 class="azul">Dinámica</h5>
+            <h5 class="azul tletra">Dinámica</h5>
             <p>Son la evolución lógica del tipo anterior. Cada vez que se abre la aplicación carga toda la información a ofrecer desde una base de datos. Estos datos se actualizan cada vez que se abre la aplicación. Es habitual el uso de lenguajes como PHP o ASP. Los cambios se llevan a cabo usando un panel CMS. Son muy eficaces para actualizar foros o bases de datos. Pueden personalizarse a tu gusto</p>
             <hr>
         </div>
@@ -113,15 +137,76 @@
             <a name="proceso"></a>
             <h1 class="titulo-paginas azul">Inicia el desarrollo de la app web</h1>
             <p>Este paso de cómo crear una aplicación web desde cero implica dividir el proceso en tres partes esenciales:</p>
-            <h5 class="azul">Base de datos</h5>
+            <h5 class="azul tletra">Base de datos</h5>
             <p>Aquí debes seleccionar la información que necesitas almacenar para construir una base de datos sólida. 
-            <h5 class="azul">Fronted</h5>
+            <h5 class="azul tletra">Fronted</h5>
             <p>El fronted de tu app web construye la inerfaz, estructura o parte visual de tu página web.</p>
-            <h5 class="azul">Backend</h5>
+            <h5 class="azul tletra">Backend</h5>
             <p>Es una de las partes más indispensables del proceso de desarrollo de aplicaciones web, ya que determina cómo funcionará la app. Por lo tanto, los lenguajes de programación destinados a construir los componentes de backend son necesarios para desarrollar componentes interactivos. PHP es uno de los lenguajes que puedes utilizar para crear las operaciones de backend de una aplicación web</p>
-            <br>
+            <hr>
+        </div>
+        <div class="tipos">
+            <a name="html"></a>
+            <h1 class="titulo-paginas azul">HTML</h1>
+            <p>Como ya mencionamos, el Frontend, utilizando las herramientas HTML, CSS y Javascript, se encarga de construir la interfaz, veamos de que se tratan éstas herramientas:</p>
+            <h5 class="azul tletra">HTML: Lenguaje de etiquetas de hipertexto</h5>
+            <p>HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).
+            <p>"Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un participante activo en la «World Wide Web» (Red Informática Mundial).</p>    
+            <p>HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web. Las marcas HTML incluyen "elementos" especiales como < head>, < title>, < body>, < header>, < footer>, < article>, < section>, < p>, < div>, < span>, < img>, < aside>, < audio>, < canvas>, < datalist>, < details>, < embed>, < nav>, < output> (en-US), < progress>, < video>, < ul>, < ol>, < li> y muchos otros. </p>
+            <a name="css"></a>
+            <h5 class="azul tletra">CSS</h5>
+            <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML. CSS describe como debe ser mostrarse el elemento estructurado en la pantalla</p>
+            <a name="javascript"></a>
+            <h5 class="azul tletra">JavaScript</h5>
+            <p>JavaScript (JS) es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase. Si bien es más conocido como un lenguaje de scripting (secuencias de comandos) para páginas web
+            </p>
+            <hr>
+        </div>
+        <div class="proceso">
+            <a name="multi"></a>
+            <h1 class="titulo-paginas azul">¿Qué es una aplicación multiplataforma?</h1>
+            <p>Para los que acabáis de llegar al mundo de las apps, la diferencia entre las apps nativas y multiplataforma es la siguiente.</p>
+            <h5 class="azul tletra">Aplicaciones nativas</h5>
+            <p>Las aplicaciones nativas están escritas en el lenguaje propio de cada sistema operativo. Esto significa que cada sistema (Android, iOS…) requerirá un desarrollo diferente.</p>
+            <h5 class="azul tletra">Aplicaciones multiplataforma</h5>
+            <p>Las aplicaciones multiplataforma tienen un solo código que es interpretado y ajustado a los sistemas operativos. Diríamos que son prácticamente sinónimo de las aplicaciones web de las que hemos hablado en varias ocasiones.
+            </p>
+            <hr>
+        </div>
+        <div class="herramientas">
+            <a name="herramientas"></a>
+            <h1 class="titulo-paginas azul">Herramientas</h1>
+            <p>El desarrollo de aplicaciones multiplataforma se puede realizar de dos maneras distintas:</p>
+            <h5 class="azul tletra">Aplicaciones Hibridas</h5>
+            <p>Utilizando lenguaje propio del desarrollo web, como es el HTML5, CSS y JavaScript. Este código se presenta después dentro de un contenedor nativo, el WebView. Las aplicaciones creadas de esta manera se conocen también como aplicaciones híbridas.</p>
+            <h5 class="azul tletra">Frameworks</h5>
+            <p>Utilizando herramientas de rendering a nativo. Estas sirven como puente entre el código multiplataforma y los componentes nativos. Este tipo de desarrollo se realiza con frameworks como Xamarin, React Native o Flutter.</p>
+            <h5 class="azul tletra">HTML 5</h5>
+            <p>Uno de los lenguajes que precisamente nos permite el desarrollo multiplataforma HTML5. Veamos un poco más en profundidad en qué consiste.</p>
+            <p>HTML5 es una versión actualizada de HTML, el lenguaje de marcado de hipertexto utilizado para crear y estructurar sitios web. HTML5 se centra en mejorar la compatibilidad con dispositivos móviles, agregar nuevas características y mejorar la experiencia de usuario. Algunas de las nuevas características incluyen: mejoras en el soporte multimedia, como la capacidad de agregar audio y vídeo directamente a páginas web, sin la necesidad de complementos; soporte para gráficos vectoriales; y mejoras en el modelo de objetos del documento, que permiten mejorar la forma en que se crean aplicaciones web.</p>
+            <video src="videohtml.mp4" width="640" height="480" controls poster="posterimage.PNG" ></video>
+            <hr>
         </div>
         <br>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        $('.ir-arriba').click(function(){
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+
+        $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+                $('.ir-arriba').slideDown(300);
+            } else {
+                $('.ir-arriba').slideUp(300);
+            }
+            });
+        });
+    </script>
 </body>
 </html>
