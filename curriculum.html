@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    
+    <style>
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background-color: #6DDB7D;
+        font-family: Geneva, Verdana, sans-serif;
+    }
+
+    .titulo{
+        align-items: center;
+        display:flex;
+        justify-content: center;
+    }
+
+    nav a{
+        text-decoration:none;
+        color:inherit;
+        font-size:14px;
+    } 
+    nav li{
+        display:inline-block;
+        width:7%;
+        padding:10px 20px;
+        background-color:#061208;
+        border:1px solid #061208;
+        text-align:center;
+        color:#fff;
+    }
+    nav li:hover{
+        background-color:#afdbc0;
+        color:#061208;
+    }
+    .contenido{
+        height: auto;
+        margin: 50px 100px 100px 100px;
+        background-color: #FFF;
+        border-radius: 40px;
+        box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.25);
+    }
+    .topicos{
+        margin: 50px;
+        align-content:center;
+    }
+    .titulo-paginas{
+        align-content: center;
+    }
+    .tipos{
+        background-image: url("fondo4.png");
+        margin: 50px;
+    }
+    .proceso{
+        background-image: url("fondo3.png");
+        margin: 50px;
+    }
+    .herramientas{
+        background-image: url("fondo2.png");
+        margin: 50px;
+    }
+    .html{
+        background-image: url("fondo5.png");
+        margin: 50px;
+    }
+    .sombra{
+        text-shadow: 1px 1px 2px black, 0 0 1em #061208, 0 0 0.2em #061208;
+        color: white;
+        margin: 50px;
+    }
+    .azul{
+        color: #061208;
+        font-weight: bold;
+    }
+    .tletra{
+        font-size: large;
+    }
+    .ir-arriba {
+        display:none;
+        padding:20px;
+        background:#061208;
+        font-size:20px;
+        color:#fff;
+        cursor:pointer;
+        position: fixed;
+        bottom:20px;
+        right:20px;
+    }
+    .centrar{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    p{
+        justify-content: space-between;
+    }
+    .ocultar{
+        display:none;
+    }
+    </style>
+</head>
+<body>
+    <div class="contenido">
+        <span class="ir-arriba">Up</span>
+        <div class="titulo">
+            <h1 class="sombra">Curriculum</h1>
+        </div>
+        <nav>
+            <ul class="menu centrar">
+                <li><a href="#" id="inicio" onclick='toggleDivs("#div-inicio")'>Inicio</a></li>
+                <li><a href="#" id="formacion" onclick='toggleDivs("#div-formacion")'>Formación</a></li>
+                <li><a href="#" id="experiencia" onclick='toggleDivs("#div-experiencia")'>Experiencia</a></li>
+                <li><a href="#" id="habilidades" onclick='toggleDivs("#div-habilidades")'>Habilidades</a></li>
+                <li><a href="#" id="cursos" onclick='toggleDivs("#div-cursos")'>Cursos</a></li>
+                <li><a href="#" id="diplomados" onclick='toggleDivs("#div-diplomados")'>Diplomados</a></li>
+                <li><a href="#" id="tecnologias" onclick='toggleDivs("#div-tecnologias")'>Tecnologias</a></li>
+                <li><a href="#" id="contacto" onclick='muestraContacto()'>Contacto</a></li>
+              </ul>
+              <hr>
+        </nav>
+        
+        <div class="topicos" id="div-inicio">
+            <h1 class="titulo-paginas azul centrar">Bienvenida</h1>
+            <p class="centrar"><img src="neo.png" width="30%"></p>
+            <p>"Durante mis 22 años de dedicación laboral, he acumulado una valiosa experiencia que me ha permitido enfrentar y superar muchos desafíos. Mi carrera ha sido una combinación de aprendizaje y crecimiento profesional, y estoy muy agradecido por todas las oportunidades que he tenido a lo largo de los años.</p>
+            <p>En mi primer trabajo, trabajé como asistente en una pequeña empresa local. Era un trabajo muy desafiante, ya que tenía que llevar a cabo muchas tareas diferentes, pero también fue una excelente oportunidad para aprender sobre el mundo empresarial y cómo funcionaba. Aprendí sobre la importancia de la organización y la eficiencia, y cómo estos factores pueden afectar el éxito de un negocio.
+            <p>Después de varios años en este trabajo, decidí dar el siguiente paso en mi carrera y me mudé a una empresa de tecnología de vanguardia. Aquí, tuve la oportunidad de trabajar en proyectos innovadores y aprender sobre las últimas tecnologías y tendencias en el mercado. Aprendí sobre la importancia de la investigación y el desarrollo en el crecimiento de una empresa, y cómo estos factores pueden dar forma a la dirección futura de una industria.
+            <p>A lo largo de los años, he tenido la oportunidad de trabajar en diferentes empresas y en diferentes industrias, lo que me ha brindado una visión amplia y diversa del mundo laboral. He trabajado en equipo con colegas de diferentes culturas y antecedentes, lo que me ha enseñado sobre la importancia de la colaboración y la comunicación efectiva en el lugar de trabajo. También he tenido la oportunidad de liderar proyectos y equipos, lo que me ha enseñado sobre la importancia de la motivación y la inspiración en el éxito de un proyecto.
+            <p>En resumen, mis 22 años de experiencia laboral han sido un camino lleno de aprendizaje y crecimiento. He adquirido habilidades valiosas que me han permitido ser un empleado más eficiente y efectivo, y he aprendido mucho sobre el mundo empresarial y cómo funciona. Estoy agradecido por todas las oportunidades que he tenido a lo largo de los años, y espero continuar aprendiendo y creciendo en mi carrera en el futuro."</p>
+            <hr>
+        </div>
+        
+        <div class="tipos" id="div-formacion">
+            <a name="tipos"></a>
+            <h1 class="titulo-paginas azul">Formación</h1>
+            <p>Soy un profesional altamente capacitado y dedicado, con una formación académica sólida y diversificada en el área de la informática.</p>
+            <h5 class="azul tletra">Candidato a Maestría en Tecnologías de la Información y Comunicación</h5>
+            <p>2007 - 2009 Universidad Interamericana para el Desarrollo (UNID)</p> 
+            <h5 class="azul tletra">Ingeniero en Sistemas Computacionales</h5>
+            <p>1994 - 2000 Instituto Tecnológico de Zacatecas (ITZ)</p>   
+            <hr>
+        </div>
+        <div class="proceso" id="div-experiencia">
+            <a name="proceso"></a>
+            <h1 class="titulo-paginas azul">Experiencia</h1>
+            <p>Soy un profesional altamente motivado y dedicado con amplia experiencia en el área de la informática. Tengo una amplia gama de habilidades y he trabajado en una variedad de proyectos, logrando resultados sobresalientes gracias a mi enfoque en la comunicación efectiva y colaboración con equipos cross-funcionales. Estoy comprometido con el logro de resultados y busco continuar mi crecimiento profesional en un entorno desafiante y gratificante.
+            <h5 class="azul tletra">Docente de Sistemas y Mecatrónica</h5>
+            <p>2012-2023 - UPIIZ IPN</p>
+            <h5 class="azul tletra">Jefe de la Unidad de Tecnología Educativa y Campus Virtual</h5>
+            <p>
+                2017-2021 - UPIIZ IPN       
+            </p>
+            <h5 class="azul tletra">Programador Freelance</h5>
+            <p>
+                2010 - 2011 - UPIIZ IPN       
+            </p>
+            <h5 class="azul tletra">Jefe del Departamento de Informatica</h5>
+            <p>
+                2004 - 2011 CECyTEZ       
+            </p>
+            <h5 class="azul tletra">Operador de Sistemas</h5>
+            <p>
+                2001 - 2004 Oportunidades       
+            </p>
+            <hr>
+        </div>
+        <div class="tipos" id="div-habilidades">
+            <a name="html"></a>
+            <h1 class="titulo-paginas azul">Habilidades</h1>
+            <p>
+                En mi carrera profesional, he desarrollado una amplia gama de habilidades blandas que me han permitido destacar en diferentes entornos de trabajo y relaciones interpersonales. Estas habilidades incluyen mi capacidad para comunicar efectivamente, trabajar en equipo, resolver conflictos, pensar críticamente y empáticamente, y adaptarme a situaciones cambiantes. Además, he demostrado mi capacidad para liderar y motivar a otros, tomar decisiones informadas y mantener un enfoque en los objetivos a largo plazo. Creo que estas habilidades blandas son esenciales para el éxito en cualquier campo y estoy seguro de que puedo aplicarlas efectivamente en cualquier situación que se me presente.
+            </p>
+            <h5 class="azul tletra">Trabajo en equipo</h5>
+            <h5 class="azul tletra">Resolución de problemas</h5>
+            <h5 class="azul tletra">Analítico</h5>
+            <h5 class="azul tletra">Innovador</h5>
+            <h5 class="azul tletra">Tolerancia al estrés</h5>
+            <h5 class="azul tletra">Trabajo bajo presión</h5>
+            <h5 class="azul tletra">Orientado a objetivos</h5>
+
+            <hr>
+        </div>
+        <div class="proceso" id="div-cursos">
+            <a name="multi"></a>
+            <h1 class="titulo-paginas azul">Cursos</h1>
+            <p>
+                Soy un profesional comprometido con mi crecimiento y desarrollo continuo. He tomado una variedad de cursos en áreas relevantes como [listar los cursos relevantes]. Estos cursos me han brindado un conocimiento más profundo y habilidades en [describir las áreas de conocimiento y habilidades relevantes].
+            </p>
+            <p>
+                Además, estos cursos han reforzado mi compromiso con el aprendizaje y la mejora continua. Estoy ansioso por aplicar lo que he aprendido en mi trabajo diario y seguir explorando nuevas áreas de interés a través de futuros cursos y programas de capacitación.
+            </p>
+            <ul>
+                <li><h5 class="azul tletra">Tópicos Avanzados de Gráfos</h5></li>
+                <li><h5 class="azul tletra">Google Classroom</h5></li>
+                <li><h5 class="azul tletra">Uso Básico de Moodle</h5></li>
+                <li><h5 class="azul tletra">Officce 365</h5></li>
+                <li><h5 class="azul tletra">Organización de Archivos</h5></li>
+                <li><h5 class="azul tletra">Java</h5></li>
+                <li><h5 class="azul tletra">Gestión de Calidad</h5></li>
+                <li><h5 class="azul tletra">Páginas Web</h5></li>
+                <li><h5 class="azul tletra">Delitos Electorales</h5></li>
+                <li><h5 class="azul tletra">Estándar ISO/IEC 29110</h5></li>
+            </ul>
+            <hr>
+        </div>
+        <div class="herramientas" id="div-diplomados">
+            <a name="herramientas"></a>
+            <h1 class="titulo-paginas azul">Diplomados</h1>
+            <p>
+                Soy un profesional comprometido con mi desarrollo y crecimiento continúo. A lo largo de mi carrera, he tomado varios diplomados y cursos de capacitación en áreas relevantes de mi trabajo. Estos programas me han brindado una visión más amplia y profunda en las áreas en las que me he desempeñado y me han permitido desarrollar habilidades clave de liderazgo y desarrollo tencnológico.
+            </p>
+            <p>        
+                Estoy enfocado en aplicar lo aprendido en mi trabajo diario y utilizar estos conocimientos para aportar valor a mi equipo y organización. Continuaré buscando oportunidades para ampliar mis conocimientos y habilidades a través de futuros programas de capacitación y desarrollo.
+            </p>
+            <h5 class="azul tletra">Tendencias Interactivas</h5>
+            <p>
+                2023 - 2023 UNID
+            </p>
+            <h5 class="azul tletra">Desarrollo de habilidades para la tutoría polivirtual</h5>
+            <p>
+                2019 - 2020 UPIIZ IPN
+            </p>
+            <h5 class="azul tletra">Habilidades Gerenciales para la Alta Dirección</h5>
+            <p>
+                2005 - 2006 CECyTEZ
+            </p>
+            <hr>
+        </div>
+        <div class="herramientas" id="div-tecnologias">
+            <a name="herramientas"></a>
+            <h1 class="titulo-paginas azul">Tecnologías</h1>
+            <p>
+                En mi carrera como profesional en tecnología, he desarrollado una amplia gama de habilidades y conocimientos en una variedad de tecnologías y plataformas. He demostrado mi capacidad para aprender y aplicar nuevas tecnologías con rapidez y eficacia, y he contribuido a proyectos exitosos en una variedad de industrias. Me encanta estar al tanto de las últimas tendencias y desarrollos en el campo de la tecnología y estoy siempre buscando nuevas formas de aplicar mis habilidades y conocimientos para resolver desafiantes problemas técnicos. Estoy seguro de que puedo utilizar mis habilidades y conocimientos para brindar soluciones eficaces y sostenibles a cualquier empresa o organización que se me presente.Algunas de las tecnologías que domino incluyen son las siguientes:
+            </p>
+            <ul>
+                <li><h5 class="azul tletra">Blender</h5></li>
+                <li><h5 class="azul tletra">Unity</h5></li>
+                <li><h5 class="azul tletra">Android</h5></li>
+                <li><h5 class="azul tletra">Java</h5></li>
+                <li><h5 class="azul tletra">JQuery</h5></li>
+                <li><h5 class="azul tletra">JavaScript</h5></li>
+                <li><h5 class="azul tletra">C</h5></li>
+                <li><h5 class="azul tletra">HTML</h5></li>
+                <li><h5 class="azul tletra">CSS</h5></li>
+                <li><h5 class="azul tletra">Node.J</h5></li>
+            </ul>   
+            <hr>
+        </div>
+        <br>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        function muestraContacto(){
+            Swal.mixin({
+                input: 'text',
+                confirmButtonText: 'Siguiente →',
+                showCancelButton: true,
+                customClass: "bulma-swal",
+                progressSteps: ['1', '2', '3']
+                }).queue([
+                {
+                    title: 'Contactar',
+                    text: 'Ingrese su nombre'
+                },
+                'Correo',
+                'Motivo de contacto'
+                ]).then((result) => {
+                if (result.value) {
+                    const answers = JSON.stringify(result.value)
+                    Swal.fire({
+                    title: 'Es todo',
+                    html: `
+                       A la brevedad me pongo en contacto.
+                    `,
+                    confirmButtonText: 'Enviar solicitud'
+                    })
+                }
+                })
+        }
+        $(document).ready(function(){
+            ocultarAllDivs();
+            $('.ir-arriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+
+            $(window).scroll(function(){
+                if( $(this).scrollTop() > 0 ){
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+        });
+
+       function divOculto(){
+            return isHidden = $('#div-inicio #div-formacion #div-experiencia #div-habilidades #div-cursos #div-diplomados #div-tecnologias').is(':hidden');
+        }
+
+        function ocultarAllDivs(){
+            $("#div-formacion").hide("slow")
+            $("#div-experiencia").hide("slow")
+            $("#div-habilidades").hide("slow")
+            $("#div-cursos").hide("slow")
+            $("#div-diplomados").hide("slow")
+            $("#div-tecnologias").hide("slow")
+        }
+
+        function toggleDivs(id){
+            ocultarAllDivs(); 
+            $("#div-inicio").hide("slow")
+            $(id).toggle("slow","swing");
+        }
+    </script>
+</body>
+</html>
