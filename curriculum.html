@@ -325,14 +325,15 @@
 
         function sendmMail(answersArr){
             $.ajax({
+                method:"POST",
                 url: "https://unid2023.000webhostapp.com/mail.php",
                 data: {
-                    nombre: answersArr[0],
-                    email:answersArr[1],
-                    asunto:answersArr[2]
+                    nombre: 'Efrain Arredondo',
+                    email:'algo@email.com',
+                    asunto:'Presupuesto pagina'
                 },
                 success: function( result ) {
-                    console(result);
+                    console.log(result);
                 }
                 });
         }
