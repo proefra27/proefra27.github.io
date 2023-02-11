@@ -274,9 +274,9 @@
                 'Motivo de contacto'
                 ]).then((result) => {
                 if (result.value) {
-                    var answers = JSON.stringify(result.value);
-                    var answersArr = answers.split(",");
-                    sendmMail(answersArr)
+                    var answers = result.value+'';
+                    var respuestas=answers.split(",");
+                    sendmMail(respuestas)
                     Swal.fire({
                     title: 'Es todo',
                     html: `
@@ -324,13 +324,14 @@
         }
 
         function sendmMail(answersArr){
+            alert(answersArr[0]);
             $.ajax({
                 method:"POST",
                 url: "https://unid2023.000webhostapp.com/mail.php",
                 data: {
-                    nombre: 'Efrain Arredondo',
-                    email:'algo@email.com',
-                    asunto:'Presupuesto pagina'
+                    nombre: answersArr[0],
+                    email:answersArr[1],
+                    asunto:answersArr[2]
                 },
                 success: function( result ) {
                     console.log(result);
